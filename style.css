@@ -1,0 +1,700 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F3FFF4;;
+}
+
+:root{
+    --green-color: #048853;
+    --bg-icon: #00985B;
+}
+
+/* Z-Index */
+.aksen-img{
+    z-index: 1;
+}
+
+.navbar{
+    z-index: 3;
+}
+
+*{
+    z-index: 2;
+}
+
+.img-hero{
+    z-index: 1;
+}
+
+/* Navbar Color */
+.nav-color{
+    background: var(--green-color);
+    transition: .3s ease-in-out all;
+}
+
+.bg-transparent{
+    transition: .3s ease-in-out all;
+}
+
+/* Navbar */
+.navbar-brand{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-primary{
+    width: 133px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button-secondary{
+    width: 133px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    color: var(--green-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Hero Section */
+#hero{
+    background: linear-gradient(113deg, #048853 0.98%, rgba(0, 0, 0, 0.84) 165.36%);
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero{
+    height: 100%;
+}
+
+
+.hero-tagline h1{
+    color: #FFF;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 138.462% */
+}
+
+.hero-tagline p{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.button-large-primary{
+    width: 237px;
+    height: 70px;
+    flex-shrink: 0;
+    background: #FFF;
+    color: var(--green-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button-rumah .panah{
+    transition: .3s ease;
+}
+
+.button-rumah:hover .panah{
+    transform: translateX(20px);
+}
+
+/* Layanan */
+#layanan{
+    padding-bottom: 173px;
+}
+
+#layanan h2{
+    color: var(--green-color);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#layanan .deskripsi-layanan{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-layanan{
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 14.7px 0px rgba(0, 0, 0, 0.09);
+    position: relative;
+    transition: background-color 1s;
+}
+
+.card-layanan h3{
+    color: var(--green-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition:  all ease-in-out .3s;
+}
+
+.card-layanan p{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition:  all ease-in-out .3s;
+}
+
+.card-layanan:hover{
+    background-color: transparent;
+}
+
+.card-layanan:after {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-image: linear-gradient(45deg, 
+                      rgba(0, 152, 91, 1), 
+                      rgb(0, 96, 58), 
+                      rgba(0, 152, 91, 1), 
+                      rgb(0, 96, 58), 
+                      rgba(0, 152, 91, 1)
+                      );
+    background-size: 800px 800px;
+    background-position: 0px 0px;
+    animation: move 2s infinite linear;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.card-layanan:hover:after {
+    opacity: 1;
+}
+@keyframes move {
+  from {background-position: 0px 600px;}
+    to {background-position: -800px 600px;}
+}
+
+/* .card-layanan:hover{
+    background: linear-gradient(125deg, #00985B 0%, #000 186%);
+} */
+
+.card-layanan:hover .circle-icon{
+    background: #fff;
+}
+
+
+.card-layanan:hover h3, .card-layanan:hover p{
+    color: #fff;
+}
+
+.circle-icon{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    background: var(--bg-icon);
+    border-radius: 50%;
+    transition:  all ease-in-out .3s;
+}
+
+/* Search */
+#search{
+    background: url(Assets/green-interior-modern-interior-living-room-style-with-soft-sofa-green-wall-3d-rendering\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+#search h2{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#search p{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-cari{
+    height: 80px;
+}
+
+.input-cari .button-secondary{
+    width: 200px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.80);
+    color: var(--green-color);
+    font-weight: normal;
+}
+
+.input-cari .button-primary{
+    width: 135px;
+    height: 80px;
+    flex-shrink: 0;
+    background: var(--bg-icon);
+    font-size: 36px;
+    border-radius: 0 10px 10px 0 ;
+}
+
+.nav-tabs{
+    border: none;
+}
+
+.nav-tabs .nav-link{
+    background: rgba(255, 255, 255, 0.60);
+    color: #000;
+    border: none;
+    border-radius: 0 0 0 0;
+}
+
+.nav-tabs .nav-link.active{
+    background: rgba(255, 255, 255, 0.80);
+    color: var(--bg-icon);
+    font-weight: 500;
+    border-radius: 9px 0 0 0;
+}
+
+/* Rekomendasi */
+.rekomendasi-title{
+    margin-bottom: 55px;
+}
+
+.rekomendasi-title h2{
+    color: var(--green-color);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card{
+    width: 90%;
+    height: 469px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 1s;
+}
+
+.card-body h4{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: .8rem;
+    /* transition: .3s ease-in-out; */
+}
+
+.card-body p{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: .3s ease-in-out;
+}
+
+.card-fasilitas{
+    background: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+}
+
+.card-fasilitas span{
+    font-weight: 500;
+    margin-top: 18px;
+    color: #000;
+}
+
+.card-fasilitas p{
+    font-size: 12px;
+}
+
+.card:hover{
+    background-color: transparent;
+}
+
+.card:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    background-image: linear-gradient(45deg, 
+                      rgba(0, 152, 91, 1), 
+                      rgb(0, 96, 58), 
+                      rgba(0, 152, 91, 1), 
+                      rgb(0, 96, 58), 
+                      rgba(0, 152, 91, 1)
+                      );
+    background-size: 800px 800px;
+    background-position: 0px 0px;
+    animation: move 2s infinite linear;
+    opacity: 0;
+    transition: opacity 1s;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover:after {
+    opacity: 1;
+}
+@keyframes move {
+  from {background-position: 0px 600px;}
+    to {background-position: -800px 600px;}
+}
+
+/* .card:hover{
+    background: linear-gradient(151deg, #00985B -2.67%, #00985B 56.48%, #000 113.25%);
+} */
+
+.card:hover h4,.card:hover .card-body p{
+    color: #fff;
+}
+
+/* Fitur */
+#fitur{
+    padding-bottom: 158px;
+}
+
+#fitur h2{
+    color: var(--green-color);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button-fitur{
+    width: 238px;
+    height: 63px;
+    flex-shrink: 0;
+    background: var(--bg-icon);
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur h5{
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur span{
+    color: #FFF;
+    font-size: 14px;
+}
+.card-fitur h6{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur button{
+    width: 150px;
+    height: 45px;
+    flex-shrink: 0;
+    border: none;
+    background: var(--bg-icon);
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur .overlay{
+    background: rgba(0, 0, 0, 0.50);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card-fitur .overlay:hover{
+    opacity: 1;
+}
+
+.button-arrow-left, .button-arrow-right{
+    border: none;
+    width: 61px;
+    height: 61px;
+    flex-shrink: 0;
+    background: var(--bg-icon);
+    border-radius: 50%;
+    padding: 0;
+}
+
+.button-arrow-left, .button-arrow-right:hover{
+    transform: translateX(20px);
+}
+
+/* Contact */
+#contact{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(Assets/bg-contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 148px;
+}
+
+#contact .container{
+    padding: 148px 0 148px 0;
+}
+
+#contact h3{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 441px;
+}
+
+#contact h6{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.kontak a, .nama-sosmed{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.card-contact{
+    background: #FFF;
+    width: 100%;
+    height: 445px;
+    padding: 52px 48px;
+    border-radius: 5px;
+}
+
+.card-contact h2{
+    color: #00985B;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.bg-color{
+    background: #C4C4C4;
+    border: none;
+    border-radius: 0;
+    height: 75px !important;
+}
+
+.form-floating .text-color{
+    color: #717171;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+}
+
+.button-kontak{
+    width: 100%;
+    height: 75px;
+    border: none;
+    background: #00985B;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 270px;
+    background: #000;
+}
+
+.footer-title{
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer a{
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.copyright{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    bottom: 20px;
+}
+
+/* BreakPoints */
+@media screen and (max-width: 922px){
+    .hero-tagline h1{
+        line-height: 48px;
+    }
+
+    .hero-tagline p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .card-layanan h3{
+        font-size: 19px;
+        margin-bottom: 4px !important;
+    }
+
+    .card-layanan p{
+        font-size: 12px;
+    }
+
+    .input-cari .button-secondary{
+        width: 120px;
+        font-size: 14px;
+        border-radius: 0;
+    }
+
+    .input-cari .button-primary{
+        font-size: 24px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .button-fitur{
+        width: 100%;
+    }
+
+    #contact h3{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .card-contact{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-contact h2{
+        font-size: 32px;
+        line-height: normal;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .img-hero{
+        width: 75%;
+        height: auto;
+    }
+
+    .hero-tagline h1{
+        line-height: 52px;
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    .deskripsi-layanan{
+        font-size: 16px;
+    }
+
+    .card-layanan{
+        margin: 15px 0 15px 0;
+    }
+
+    #search h2{
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    #search p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .input-cari .button-secondary{
+        height: 60px;
+        width: 50%;
+        border-radius: 0;
+    }
+
+    .input-cari .button-primary{
+        height: 60px;
+        width: 30%;
+        border-radius: 0;
+    }
+
+    .input-cari .form-control{
+        height: 60px;
+    }
+
+    .copyright{
+        bottom: 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 350px){
+    
+}
